@@ -71,12 +71,8 @@ PORT=5000
 
 ## Project Status
 
-Actively in development as a college capstone project.
+Actively in development.
 
 ## Why RideSync
 
 Most carpool apps chase real-time GPS precision, which adds significant complexity for little benefit in a local, event-based context. RideSync focuses instead on a simple, explainable matching system — solving the real coordination pain without the overhead.
-
-## License
-
-MIT
