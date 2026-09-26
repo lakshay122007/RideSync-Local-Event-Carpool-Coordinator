@@ -11,12 +11,6 @@ app.get('/health', (req, res) => {
     status: 'ok' 
 });
 });
-const pool = require('./config/db');
-
-app.get('/db-test', async (req, res) => {
-  const result = await pool.query('SELECT NOW()');
-  res.json(result.rows[0]);
-});
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
