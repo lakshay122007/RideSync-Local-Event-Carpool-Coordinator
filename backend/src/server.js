@@ -32,7 +32,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Server error' });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
   console.log(`API running on http://localhost:${port}`);
   if (!process.env.DISABLE_JOBS) startJobs();
